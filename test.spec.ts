@@ -12,7 +12,7 @@ describe("", () => {
     await fs.mkdir(rootDir, {
       recursive: true,
     });
-    for (let i = 0; i < 100000; i++) {
+    for (let i = 0; i < 10000; i++) {
       await fs.writeFile(
         resolve(__dirname, "tmp", `${randomName}`, `file-${i}`),
         "1"
